@@ -18,6 +18,7 @@ header{
     border-bottom: 2.5px solid #f61e1e ;
     font-family: Roboto;
     font-weight: bold;
+
 }
 /**** HEADER ****/
 .logo{
@@ -51,10 +52,113 @@ nav{
 }
 /**** MAIN ****/
 .hero_inicio{
-    background-image: url("/clase_9_Git/Contenido/imagen\ inicio.jpg");
+    background-image: url("../Contenido/imagen\ inicio.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     width: 100%;
     height: 620px;
+}
+h1{
+    margin: .3em;
+    color: #f61e1e;
+    text-align: center;
+    grid-area: tituloP;
+    font-size: 42px;
+}
+@keyframes titulo{
+     0%{
+        width: 100px;
+    }
+    25%{
+        width: 300px;
+    }
+    50%{
+        width: 200px;
+    }
+    75%{
+        width: 300px;
+    }
+    100%{
+        width: 100px;
+    } 
+}
+.div_txt_Bienvenida{
+    grid-area: txt_Bienvenida;
+    display:flex;
+    justify-content: center;
+    text-align: justify; 
+    width: 100%;
+}
+.pBienvenida{
+    width: 70%; 
+}
+.div_boton_agendarCita{
+    grid-area: botonAC;
+    display:flex;
+    justify-content: center;
+    width: 98%;
+    margin: .5em;
+}
+.agendarCita{
+    text-align: center; 
+        width: 100%;
+        background-color: #f61e1e;
+        padding: .5em;
+        color: white;
+        text-decoration: none;
+        border-radius: .3em;
+        margin-top: .5em;
+}
+.tratamientos_dentales{
+    margin-left: 10%;
+    grid-area: T_Dentales;
+}
+.lista_tratamientos_dentales{
+    font-size: 14px;
+    list-style-type: disc;
+    margin-left: 1.5em;
+    text-decoration: underline 2px #EB3737;
+    font-size: 14px;
+}
+.titulo_TD{
+    font-weight: bold;
+    font-size: 18px;
+}
+section{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+article{
+    background-color: whitesmoke;
+    border-radius: .2em;
+    margin: .7em;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+    grid-area: Servicios;
+    width: 90%;
+}
+main{
+    grid-template-areas: 
+    "tituloP tituloP tituloP"
+    ;
+}
+.img_servicios{
+    width: 80%;
+}
+.txt_servicios{
+    text-align: center;
+}
+/****FOOTER ****/
+footer {
+    background-color:rgb(228, 228, 228);
+    height: 10vh;
+}
+footer p{
+        text-align: center;
+        position: relative;
+        top: 3.5vh;
 }
