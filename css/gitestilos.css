@@ -52,7 +52,7 @@ nav{
 }
 /**** MAIN ****/
 .hero_inicio{
-    background-image: url("../Contenido/imagen/inicio.jpg");
+    background-image: url("../Contenido/imagen\ inicio.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
